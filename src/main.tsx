@@ -10,7 +10,7 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <div style={{ width: '100%', height: '-webkit-fill-available', position: 'absolute' }}>
       <Plasma 
-        color="#281952"
+        color="#95A7D0"
         speed={0.6}
         direction="forward"
         scale={1.1}
