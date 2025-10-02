@@ -8,7 +8,7 @@ import Aurora from './Aurora.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <div style={{ width: '100%', height: '100%', position: 'absolute' }}>
+    <div style={{ width: '100%', height: '-webkit-fill-available', position: 'absolute' }}>
       <Aurora
         colorStops={["#C2FF66", "#E494E5", "#29FFB8"]}
         blend={0.5}
