@@ -7,6 +7,13 @@ import GlassSurface from './GlassSurface.tsx'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <App />
-    <GlassSurface />
+    <GlassSurface 
+      width={300} 
+      height={200}
+      borderRadius={24}
+      className="my-custom-class"
+    >
+      <h2>Glass Surface Content</h2>
+    </GlassSurface>
   </StrictMode>,
 )
