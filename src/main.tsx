@@ -12,7 +12,7 @@ createRoot(document.getElementById('root')!).render(
       <DarkVeil />
     </div>
     {/* <App /> */}
-    <div style={{ width: '100%' }}>
+    <div style={{ placeItems: 'center', width: '100%' }}>
       <GlassSurface 
         width={300} 
         height={200}
