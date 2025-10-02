@@ -4,17 +4,21 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import GlassSurface from './GlassSurface.tsx'
 import SplitText from './SplitText.tsx'
-import Silk from './Silk.tsx'
+import Prism from './Prism.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <div style={{ width: '100%', height: '-webkit-fill-available', position: 'absolute' }}>
-      <Silk
-        speed={3}
-        scale={1}
-        color="#377195"
-        noiseIntensity={0}
-        rotation={0}
+      <Prism
+        animationType="3drotate"
+        timeScale={0.5}
+        height={3.5}
+        baseWidth={5.5}
+        scale={3.6}
+        hueShift={0}
+        colorFrequency={1}
+        noise={0.5}
+        glow={1}
       />
     </div>
     {/* <App /> */}
