@@ -11,7 +11,7 @@ createRoot(document.getElementById('root')!).render(
     <Aurora
       colorStops={["#66FCFF", "#F0A3DF", "#576AFF"]}
       blend={0.5}
-      amplitude={1.0}
+      amplitude={2.0}
       speed={0.5}
     />
     {/* <App /> */}
