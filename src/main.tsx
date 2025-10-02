@@ -23,7 +23,7 @@ createRoot(document.getElementById('root')!).render(
       <GlassSurface 
         width={300} 
         height={200}
-        borderRadius={32}
+        borderRadius={48}
         className="glassy"
       >
         <SplitText
