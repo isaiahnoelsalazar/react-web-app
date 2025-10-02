@@ -16,6 +16,8 @@ createRoot(document.getElementById('root')!).render(
         lightSpread={0.5}
         rayLength={3}
         followMouse={false}
+        saturation={1}
+        pulsating={false}
         mouseInfluence={0}
         noiseAmount={0}
         distortion={0}
