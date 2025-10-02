@@ -4,12 +4,17 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import GlassSurface from './GlassSurface.tsx'
 import SplitText from './SplitText.tsx'
-import DarkVeil from './DarkVeil.tsx'
+import Aurora from './Aurora.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <div style={{ width: '100%', height: '100%', position: 'absolute' }}>
-      <DarkVeil />
+      <Aurora
+        colorStops={["#C2FF66", "#E494E5", "#29FFB8"]}
+        blend={0.5}
+        amplitude={1.0}
+        speed={0.5}
+      />
     </div>
     {/* <App /> */}
     <div style={{ placeItems: 'center', height: '50%', display: 'flex', justifyContent: 'center', width: '100%' }}>
