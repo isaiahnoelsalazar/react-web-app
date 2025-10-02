@@ -4,18 +4,16 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import GlassSurface from './GlassSurface.tsx'
 import SplitText from './SplitText.tsx'
-import Iridescence from './Iridescence.tsx'
+import Aurora from './Aurora.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <div style={{ width: '100%', height: '-webkit-fill-available', position: 'absolute' }}>
-      <Iridescence
-        color={[1, 1, 1]}
-        mouseReact={false}
-        amplitude={0.1}
-        speed={0.5}
-      />
-    </div>
+    <Aurora
+      colorStops={["#66FCFF", "#F0A3DF", "#576AFF"]}
+      blend={0.5}
+      amplitude={1.0}
+      speed={0.5}
+    />
     {/* <App /> */}
     <div style={{ placeItems: 'center', height: '-webkit-fill-available', display: 'flex', justifyContent: 'center', width: '100%' }}>
       <GlassSurface 
