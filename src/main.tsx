@@ -4,20 +4,16 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import GlassSurface from './GlassSurface.tsx'
 import SplitText from './SplitText.tsx'
-import Particles from './Particles.tsx'
+import Iridescence from './Iridescence.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <div style={{ width: '100%', height: '-webkit-fill-available', position: 'absolute' }}>
-      <Particles
-        particleColors={['#ffffff', '#ffffff']}
-        particleCount={500}
-        particleSpread={10}
-        speed={0.1}
-        particleBaseSize={400}
-        moveParticlesOnHover={false}
-        alphaParticles={true}
-        disableRotation={false}
+      <Iridescence
+        color={[1, 1, 1]}
+        mouseReact={false}
+        amplitude={0.1}
+        speed={0.5}
       />
     </div>
     {/* <App /> */}
