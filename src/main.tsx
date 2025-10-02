@@ -4,18 +4,17 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import GlassSurface from './GlassSurface.tsx'
 import SplitText from './SplitText.tsx'
-import Plasma from './Plasma.tsx'
+import Silk from './Silk.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <div style={{ width: '100%', height: '-webkit-fill-available', position: 'absolute' }}>
-      <Plasma 
-        color="#4D659E"
-        speed={0.6}
-        direction="forward"
-        scale={1.1}
-        opacity={0.8}
-        mouseInteractive={false}
+      <Silk
+        speed={3}
+        scale={1}
+        color="#377195"
+        noiseIntensity={0}
+        rotation={0}
       />
     </div>
     {/* <App /> */}
