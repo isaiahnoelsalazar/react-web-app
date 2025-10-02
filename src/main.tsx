@@ -12,15 +12,15 @@ createRoot(document.getElementById('root')!).render(
       <LightRays
         raysOrigin="top-center"
         raysColor="#FFFFFF"
-        raysSpeed={1}
-        lightSpread={0.5}
+        raysSpeed={0.7}
+        lightSpread={2}
         rayLength={3}
         followMouse={false}
         saturation={1}
         pulsating={false}
         mouseInfluence={0}
         noiseAmount={0}
-        distortion={0}
+        distortion={0.7}
         fadeDistance={2}
         className="rays"
       />
