@@ -8,7 +8,7 @@ import DarkVeil from './DarkVeil.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+    <div style={{ width: '100%', height: '100%', position: 'absolute' }}>
       <DarkVeil />
     </div>
     <SplitText
