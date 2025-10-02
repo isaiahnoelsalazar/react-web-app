@@ -4,16 +4,17 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import GlassSurface from './GlassSurface.tsx'
 import SplitText from './SplitText.tsx'
-import Aurora from './Aurora.tsx'
+import Squares from './Squares.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <div style={{ width: '100%', height: '-webkit-fill-available', position: 'absolute' }}>
-      <Aurora
-        colorStops={["#C2FF66", "#E494E5", "#29FFB8"]}
-        blend={0.5}
-        amplitude={1.0}
-        speed={0.5}
+      <Squares 
+        speed={0.5} 
+        squareSize={40}
+        direction='up'
+        borderColor='#1F2C38'
+        hoverFillColor='#1C1C1C'
       />
     </div>
     {/* <App /> */}
@@ -21,7 +22,7 @@ createRoot(document.getElementById('root')!).render(
       <GlassSurface 
         width={300} 
         height={200}
-        borderRadius={24}
+        borderRadius={32}
         className="glassy"
       >
         <SplitText
