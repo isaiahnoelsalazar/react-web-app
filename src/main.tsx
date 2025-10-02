@@ -9,7 +9,7 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <SplitText
       text="Hello!"
-      className="text-2xl font-semibold text-center"
+      className="text-2xl font-semibold text-center h1"
       delay={100}
       duration={0.6}
       ease="power3.out"
