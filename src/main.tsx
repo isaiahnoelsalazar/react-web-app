@@ -4,21 +4,23 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import GlassSurface from './GlassSurface.tsx'
 import SplitText from './SplitText.tsx'
-import Prism from './Prism.tsx'
+import LightRays from './LightRays.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <div style={{ width: '100%', height: '-webkit-fill-available', position: 'absolute' }}>
-      <Prism
-        animationType="3drotate"
-        timeScale={0.3}
-        height={8}
-        baseWidth={10}
-        scale={3.6}
-        hueShift={0}
-        colorFrequency={1}
-        noise={0}
-        glow={0.7}
+      <LightRays
+        raysOrigin="top-center"
+        raysColor="#FFFFFF"
+        raysSpeed={1}
+        lightSpread={0.5}
+        rayLength={3}
+        followMouse={false}
+        mouseInfluence={0}
+        noiseAmount={0}
+        distortion={0}
+        fadeDistance={2}
+        className="rays"
       />
     </div>
     {/* <App /> */}
