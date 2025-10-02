@@ -4,16 +4,20 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import GlassSurface from './GlassSurface.tsx'
 import SplitText from './SplitText.tsx'
-import Aurora from './Aurora.tsx'
+import Plasma from './Plasma.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Aurora
-      colorStops={["#66FCFF", "#F0A3DF", "#576AFF"]}
-      blend={0.5}
-      amplitude={2.0}
-      speed={0.5}
-    />
+    <div style={{ width: '100%', height: '-webkit-fill-available', position: 'absolute' }}>
+      <Plasma 
+        color="#95A7D0"
+        speed={1.0}
+        direction="forward"
+        scale={0.5}
+        opacity={1}
+        mouseInteractive={false}
+      />
+    </div>
     {/* <App /> */}
     <div style={{ placeItems: 'center', height: '-webkit-fill-available', display: 'flex', justifyContent: 'center', width: '100%' }}>
       <GlassSurface 
