@@ -4,17 +4,18 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import GlassSurface from './GlassSurface.tsx'
 import SplitText from './SplitText.tsx'
-import Squares from './Squares.tsx'
+import Plasma from './Plasma.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <div style={{ width: '100%', height: '-webkit-fill-available', position: 'absolute' }}>
-      <Squares 
-        speed={0.5} 
-        squareSize={40}
-        direction='up'
-        borderColor='#1F2C38'
-        hoverFillColor='#1C1C1C'
+      <Plasma 
+        color="#281952"
+        speed={0.6}
+        direction="forward"
+        scale={1.1}
+        opacity={0.8}
+        mouseInteractive={false}
       />
     </div>
     {/* <App /> */}
