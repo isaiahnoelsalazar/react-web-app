@@ -4,11 +4,21 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import GlassSurface from './GlassSurface.tsx'
 import SplitText from './SplitText.tsx'
-import Plasma from './Plasma.tsx'
+import Particles from './Particles.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <div style={{ width: '100%', height: '-webkit-fill-available', position: 'absolute' }}>
+      <Particles
+        particleColors={['#ffffff', '#ffffff']}
+        particleCount={500}
+        particleSpread={10}
+        speed={0.1}
+        particleBaseSize={400}
+        moveParticlesOnHover={false}
+        alphaParticles={true}
+        disableRotation={false}
+      />
       <Plasma 
         color="#95A7D0"
         speed={1.0}
