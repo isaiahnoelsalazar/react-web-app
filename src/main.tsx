@@ -4,6 +4,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import GlassSurface from './GlassSurface.tsx'
 import SplitText from './SplitText.tsx'
+import Plasma from './Plasma.tsx'
 import Particles from './Particles.tsx'
 
 createRoot(document.getElementById('root')!).render(
