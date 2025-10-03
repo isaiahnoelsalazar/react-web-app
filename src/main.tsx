@@ -13,15 +13,15 @@ createRoot(document.getElementById('root')!).render(
         raysOrigin="top-center"
         raysColor="#FFFFFF"
         raysSpeed={0.7}
-        lightSpread={4}
-        rayLength={24}
+        lightSpread={8}
+        rayLength={32}
         followMouse={false}
         saturation={1}
         pulsating={false}
         mouseInfluence={0}
         noiseAmount={0}
         distortion={0.7}
-        fadeDistance={32}
+        fadeDistance={64}
         className="rays"
       />
     </div>
