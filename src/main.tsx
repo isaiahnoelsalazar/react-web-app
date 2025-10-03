@@ -14,14 +14,14 @@ createRoot(document.getElementById('root')!).render(
         raysColor="#FFFFFF"
         raysSpeed={0.7}
         lightSpread={2}
-        rayLength={3}
+        rayLength={6}
         followMouse={false}
         saturation={1}
         pulsating={false}
         mouseInfluence={0}
         noiseAmount={0}
         distortion={0.7}
-        fadeDistance={2}
+        fadeDistance={4}
         className="rays"
       />
     </div>
