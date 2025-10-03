@@ -33,7 +33,7 @@ createRoot(document.getElementById('root')!).render(
         borderRadius={48}
         className="glassy"
       >
-        <SplitText
+        {/* <SplitText
           text="Hello!"
           className="text-2xl font-semibold text-center"
           delay={100}
@@ -46,7 +46,7 @@ createRoot(document.getElementById('root')!).render(
           rootMargin="-100px"
           tag="h1"
           textAlign="center"
-        />
+        /> */}
         {/* <h2>Glass Surface Content</h2> */}
       </GlassSurface>
     </div>
