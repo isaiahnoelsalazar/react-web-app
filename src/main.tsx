@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 // import App from './App.tsx'
 import './index.css'
 import GlassSurface from './GlassSurface.tsx'
-import SplitText from './SplitText.tsx'
+// import SplitText from './SplitText.tsx'
 import LightRays from './LightRays.tsx'
 
 createRoot(document.getElementById('root')!).render(
