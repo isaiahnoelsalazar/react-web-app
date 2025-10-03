@@ -69,6 +69,10 @@ button:focus-visible {
   }
 }
 
+.glassy-container {
+  height: -webkit-fill-available;
+}
+
 @media (max-width: 752px) {
   .glassy-container {
     height: 50%;
