@@ -21,7 +21,7 @@ createRoot(document.getElementById('root')!).render(
         mouseInfluence={0}
         noiseAmount={0}
         distortion={0.7}
-        fadeDistance={4}
+        fadeDistance={8}
         className="rays"
       />
     </div>
