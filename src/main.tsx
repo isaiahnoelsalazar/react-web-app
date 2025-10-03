@@ -14,14 +14,14 @@ createRoot(document.getElementById('root')!).render(
         raysColor="#FFFFFF"
         raysSpeed={0.7}
         lightSpread={2}
-        rayLength={6}
+        rayLength={12}
         followMouse={false}
         saturation={1}
         pulsating={false}
         mouseInfluence={0}
         noiseAmount={0}
         distortion={0.7}
-        fadeDistance={8}
+        fadeDistance={16}
         className="rays"
       />
     </div>
@@ -35,6 +35,30 @@ createRoot(document.getElementById('root')!).render(
       >
         <SplitText
           text="Hello!"
+          className="text-2xl font-semibold text-center"
+          delay={100}
+          duration={0.6}
+          ease="power3.out"
+          splitType="chars"
+          from={{ opacity: 0, y: 40 }}
+          to={{ opacity: 1, y: 0 }}
+          threshold={0.1}
+          rootMargin="-100px"
+          tag="h1"
+          textAlign="center"
+        />
+        {/* <h2>Glass Surface Content</h2> */}
+      </GlassSurface>
+    </div>
+    <div style={{ placeItems: 'center', height: '50%', display: 'flex', justifyContent: 'center', width: '100%' }}>
+      <GlassSurface 
+        width={300} 
+        height={200}
+        borderRadius={48}
+        className="glassy"
+      >
+        <SplitText
+          text="Welcome!"
           className="text-2xl font-semibold text-center"
           delay={100}
           duration={0.6}
