@@ -26,34 +26,32 @@ createRoot(document.getElementById('root')!).render(
       />
     </div>
     {/* <App /> */}
-    <div style={{ display: 'flex', flexDirection: 'column' }}>
-      <div className="glassy-container" style={{ placeItems: 'center', display: 'flex', justifyContent: 'center', width: '100%' }}>
-        <GlassSurface 
-          width={300} 
-          height={200}
-          borderRadius={48}
-          className="glassy"
-        >
-          {/* <SplitText
-            text="Hello!"
-            className="text-2xl font-semibold text-center"
-            delay={100}
-            duration={0.6}
-            ease="power3.out"
-            splitType="chars"
-            from={{ opacity: 0, y: 40 }}
-            to={{ opacity: 1, y: 0 }}
-            threshold={0.1}
-            rootMargin="-100px"
-            tag="h1"
-            textAlign="center"
-          /> */}
-          {/* <h2>Glass Surface Content</h2> */}
-        </GlassSurface>
-      </div>
-      <div>
-        <App />
-      </div>
+    <div className="glassy-container" style={{ placeItems: 'center', display: 'flex', justifyContent: 'center', width: '100%' }}>
+      <GlassSurface 
+        width={300} 
+        height={200}
+        borderRadius={48}
+        className="glassy"
+      >
+        {/* <SplitText
+          text="Hello!"
+          className="text-2xl font-semibold text-center"
+          delay={100}
+          duration={0.6}
+          ease="power3.out"
+          splitType="chars"
+          from={{ opacity: 0, y: 40 }}
+          to={{ opacity: 1, y: 0 }}
+          threshold={0.1}
+          rootMargin="-100px"
+          tag="h1"
+          textAlign="center"
+        /> */}
+        {/* <h2>Glass Surface Content</h2> */}
+      </GlassSurface>
+    </div>
+    <div>
+      <App />
     </div>
   </StrictMode>,
 )
