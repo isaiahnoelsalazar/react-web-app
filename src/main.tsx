@@ -53,5 +53,11 @@ createRoot(document.getElementById('root')!).render(
     <div>
       <App />
     </div>
+    <div>
+      <App />
+    </div>
+    <div>
+      <App />
+    </div>
   </StrictMode>,
 )
