@@ -8,7 +8,7 @@ import LightRays from './LightRays.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <div style={{ width: '100%', height: '100%', position: 'absolute' }}>
+    <div style={{ width: '100%', height: '100vh', position: 'absolute' }}>
       <LightRays
         raysOrigin="top-center"
         raysColor="#FFFFFF"
