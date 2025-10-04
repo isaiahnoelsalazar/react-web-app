@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.tsx'
+// import App from './App.tsx'
 import './index.css'
 import GlassSurface from './GlassSurface.tsx'
 // import SplitText from './SplitText.tsx'
@@ -49,15 +49,6 @@ createRoot(document.getElementById('root')!).render(
         /> */}
         {/* <h2>Glass Surface Content</h2> */}
       </GlassSurface>
-    </div>
-    <div>
-      <App />
-    </div>
-    <div>
-      <App />
-    </div>
-    <div>
-      <App />
     </div>
   </StrictMode>,
 )
