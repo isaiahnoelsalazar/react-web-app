@@ -23,6 +23,7 @@ a:hover {
 }
 
 body {
+  background-color: black;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -70,7 +71,7 @@ button:focus-visible {
 }
 
 .glassy-container {
-  height: 100vh;
+  height: 100%;
 }
 
 /* @media (max-width: 752px) {
