@@ -75,6 +75,6 @@ button:focus-visible {
 
 @media (max-width: 752px) {
   .glassy-container {
-    height: 50%;
+    height: 100vh;
   }
 }
