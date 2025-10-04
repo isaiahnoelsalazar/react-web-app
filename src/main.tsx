@@ -50,6 +50,8 @@ createRoot(document.getElementById('root')!).render(
         {/* <h2>Glass Surface Content</h2> */}
       </GlassSurface>
     </div>
-    <App />
+    <div>
+      <App />
+    </div>
   </StrictMode>,
 )
