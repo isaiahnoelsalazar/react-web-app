@@ -26,7 +26,7 @@ createRoot(document.getElementById('root')!).render(
       />
     </div>
     {/* <App /> */}
-    <div style={{ display: 'flex', flexDirection: 'column' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', height: '-webkit-fill-available' }}>
       <div className="glassy-container" style={{ placeItems: 'center', display: 'flex', justifyContent: 'center', width: '100%' }}>
         <GlassSurface 
           width={300} 
